@@ -28,7 +28,7 @@ AI 코딩 에이전트와 함께 Raspberry Pi 프로젝트를 진행할 때 쓰�
 AGENTS.md                    규칙 원본 — 모든 에이전트가 읽습니다
 handoff.md                   다음 세션의 단일 진입점 — 세션 끝마다 덮어씁니다
 CLAUDE.md                    Claude Code 용: "@AGENTS.md" 한 줄
-.gemini/settings.json        Gemini CLI 용: AGENTS.md 를 읽게 하는 설정
+.gemini/settings.json        Gemini CLI (API 키 사용자) 용: AGENTS.md 를 읽게 하는 설정
 .github/copilot-instructions.md   JetBrains 등의 Copilot Chat 용 안내
 .kiro/steering/hw-edit.md    Kiro 용 보조 규칙 (구동 코드를 다룰 때만 적재)
 .kiro/steering/session-close.md   Kiro 용 세션 종료 명령 (/session-close)
@@ -52,7 +52,7 @@ tools/prompt_stats.py        회의록 「프롬프트 기록」 통계 — 회�
 | **Kiro** (IDE · CLI) | `AGENTS.md` 를 기본으로 항상 읽음 + `.kiro/steering/*.md` | 저장소를 처음 열 때 **Trust** 를 누릅니다 (누르지 않으면 steering 이 적재되지 않습니다) |
 | **Claude Code** | `CLAUDE.md` (→ `@AGENTS.md` 로 원본을 불러옴) | 없음 |
 | **Codex CLI** | `AGENTS.md` | 없음 |
-| **Gemini CLI** | 기본은 `GEMINI.md` 만 | 이 템플릿의 `.gemini/settings.json` 이 `AGENTS.md` 를 읽게 합니다 |
+| **Gemini CLI** | 기본은 `GEMINI.md` 만 | 이 템플릿의 `.gemini/settings.json` 이 `AGENTS.md` 를 읽게 합니다. 단 2026-06-18 부터 개인 계정은 쓸 수 없고 API 키 인증만 동작합니다 |
 | **GitHub Copilot** (VS Code · CLI) | `AGENTS.md` | VS Code 설정 `chat.useAgentsMdFile` 이 켜져 있는지 확인합니다 |
 | **Cursor** | `AGENTS.md` | 없음 |
 | 웹 채팅만 쓰는 경우 | 없음 | 세션 시작 때 `AGENTS.md` 와 `handoff.md` 를 직접 붙여 넣습니다 |
