@@ -4,7 +4,7 @@ AI 코딩 에이전트와 함께 Raspberry Pi 프로젝트를 진행할 때 쓰�
 에이전트는 세션이 끝나면 대화를 잊습니다. 그래서 **기억을 파일에 둡니다** — 규칙은 `AGENTS.md`, 다음 할 일은 `handoff.md`,
 무슨 일이 있었는지는 회의록과 git 이력에 둡니다. 이 과목의 기말 프로젝트는 **개인 과제**이므로, 저장소 하나를 학생 한 명이 씁니다.
 
-- 튜토리얼: https://yongsoojoo.github.io/esd2026-agent-workflow/
+- 튜토리얼: https://yongsoojoo.github.io/esd2026-agent-workflow/ — git · 에이전트가 처음이면 **빠른 시작** (https://yongsoojoo.github.io/esd2026-agent-workflow/start.html) 부터 읽습니다
 - 사례 저장소 (이 규칙들이 왜 생겼는지 보여 주는 재구성 사례): https://github.com/yongsoojoo/esd2026-example-beam
 
 ## 왜 프롬프트를 전부 기록하나요
@@ -40,6 +40,7 @@ docs/writing-guide.md        보고서 작성 가이드
 logs/experiments/            실험 기록 (TEMPLATE.md) — 로그 CSV 는 logs/ 아래에 둡니다
 hw/limits.py                 구동기 한계 상수 — 이 값들은 이 파일에만 둡니다
 tools/check_log.py           로그 무결성 검사 (샘플 수 · 간격 · tick)
+tools/prompt_stats.py        회의록 「프롬프트 기록」 통계 — 회고 때 씁니다
 ```
 
 코드는 `src/` (제어 · 센싱), `hw/` (구동기 드라이버 · 한계), `sim/` (시뮬레이터), `tests/` 에 두기를 권합니다.
