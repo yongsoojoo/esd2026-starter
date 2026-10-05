@@ -93,3 +93,8 @@ Obsidian 이 만드는 `.obsidian/` 폴더는 `.gitignore` 에 들어 있습니�
 
 이 템플릿은 지도교수가 AI 코딩 에이전트 (Claude Code) 와 함께 작성하고 검토했습니다. 규칙의 원형은 지도교수 연구실의 실제 연구 프로젝트에서
 에이전트와 일하며 생긴 규칙이며, 학부 개인 프로젝트 규모에 맞게 줄였습니다.
+
+## 라이선스
+
+- 문서 (Markdown · HTML 의 본문) 는 [CC BY 4.0](LICENSE-docs), 코드 (Python · CSS · JavaScript · 설정 파일) 는 [MIT](LICENSE) 입니다. Copyright (c) 2026 Yongsoo Joo
+- 이 템플릿으로 만든 저장소에서는 `AGENTS.md` 머리말의 「유래」 줄과 README 의 템플릿 링크를 남기는 것으로 출처를 표시할 수 있습니다
